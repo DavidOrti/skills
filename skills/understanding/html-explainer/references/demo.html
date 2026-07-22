@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Explainer Review — Demo</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1f2937; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.25em; margin-top: 1.8em; }
+  table { border-collapse: collapse; margin: 1em auto; }
+  blockquote { margin: 1.5em 0; padding: .5em 1em; border-left: 4px solid #d1d5db; background: #f9fafb; color: #4b5563; }
+  td, th { border: 1px solid #d1d5db; padding: 6px 12px; text-align: left; }
+  figure { margin: 1.5em 0; padding: 1em; background: #f3f4f6; border-radius: 8px; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  pre { background: #f3f4f6; padding: 12px; border-radius: 8px; overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<h1>Explainer Review: how this page works</h1>
+
+<blockquote>
+<p>This is a demo explainer with the review annotator loaded. Hover over any paragraph, heading, list item, or table cell — it gets a dashed outline. Click it, type a comment, and it sticks (saved in your browser, survives reloads).</p>
+</blockquote>
+
+<p>To comment on a <strong>specific sentence</strong> inside a long paragraph, select that text first, then click — the selection becomes the quote in the export instead of the paragraph's opening words.</p>
+
+<h2>The workflow</h2>
+
+<ul>
+  <li>Click blocks and add comments — edit requests or questions, both work.</li>
+  <li>Add as many as you want, across as many blocks as you want.</li>
+  <li>Hit <em>Copy feedback</em> (bottom-right) and paste the block into your AI chat.</li>
+  <li>The agent locates each reference, applies edits to the file, answers questions in chat, and summarizes what it did.</li>
+</ul>
+
+<h2>What the export looks like</h2>
+
+<pre>review v1 · annotation-demo.html
+b3 p "To comment on a specific sentence..." → make this the first paragraph
+b7 li "Hit Copy feedback (bottom-right)..." → can the button also clear after copy?</pre>
+
+<h2>Reference scheme</h2>
+
+<table>
+  <tr><th>Part</th><th>Meaning</th></tr>
+  <tr><td><code>b7</code></td><td>7th eligible block in document order</td></tr>
+  <tr><td><code>p</code></td><td>element tag, sanity check</td></tr>
+  <tr><td>"quote"</td><td>rendered text, primary locator (max 120 chars)</td></tr>
+  <tr><td>→ text</td><td>your comment or question</td></tr>
+</table>
+
+<figure>
+  <p>💬 Try it now: click this very sentence and leave a comment. 😄🎉😊🥳✨😁🙌</p>
+  <figcaption>Figure 1 — figcaptions are annotatable too.</figcaption>
+</figure>
+
+<script src="../assets/annotator.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "understanding",
+  "description": "Skills for making complex material and codebases easier to understand, review, and give feedback on.",
+  "skills": "./",
+  "version": "0.1.0"
+}
