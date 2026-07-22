@@ -1,0 +1,18 @@
+{
+  "name": "davidorti-skills",
+  "owner": {
+    "name": "David Ortiz"
+  },
+  "plugins": [
+    {
+      "name": "style",
+      "source": "./skills/style",
+      "description": "Skills shaping how replies are written: tone, length, and delivery."
+    },
+    {
+      "name": "understanding",
+      "source": "./skills/understanding",
+      "description": "Skills for making complex material and codebases easier to understand, review, and give feedback on."
+    }
+  ]
+}
