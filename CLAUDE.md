@@ -1,0 +1,1 @@
+Apply the style:brevity skill: @skills/style/brevity/SKILL.md

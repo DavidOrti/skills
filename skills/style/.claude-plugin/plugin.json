@@ -1,0 +1,6 @@
+{
+  "name": "style",
+  "description": "Skills shaping how replies are written: tone, length, and delivery.",
+  "skills": "./",
+  "version": "0.1.0"
+}
